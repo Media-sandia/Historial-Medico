@@ -1,0 +1,107 @@
+/* ----------------------- GENERAL ------------------------------ */
+
+/* Alerts */
+.alert-success {
+    background-color: #C8FFA2;
+    border-color: #d0e9c6;
+    color: #3c763d;
+}
+
+
+.select2-container--default .select2-results__option--highlighted[aria-selected] {
+   background-color: #E3BA00 !important;
+   color: white;
+}
+
+.logo-home{
+	/*opacity: 8;*/
+	width: 450px;
+	height: auto;
+}
+
+
+/* fieldset forms */
+.fieldset-form{
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.fieldset-form > legend{
+    font-size: 14px;
+    color: #1686A9;
+    background-color: #ECFBFF;
+    margin-bottom: 15px;
+    padding: 5px;
+    border-bottom: 1px solid #79C9E1;
+}
+
+
+
+/* fieldset views detail */
+.fieldset-detail{
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.fieldset-detail > legend{
+    font-size: 14px;
+    color: #976BD9;
+    background-color: #EFE4FF;
+    margin-bottom: 15px;
+    padding: 5px;
+    border-bottom: 1px solid #BDA7DE;
+}
+/**/
+
+
+
+
+/* Bg gris en td principal de tabla */
+.thead-index{
+    border-top: 2px solid #FFBB33;
+    background-color: #F8F8F8;
+}
+
+
+
+/* Tamaños en letras */
+.text-diez{ font-size: 10px; }
+.text-once{ font-size: 11px; }
+.text-doce{ font-size: 12px; }
+.text-trece{ font-size: 13px; }
+
+
+/* Gris en tabla de signos vitales */
+.bg-gray-td{
+    background-color: #F6F6F6;
+}
+
+/* Estilo nombre de paciente en expediente */
+.div-name-patient{
+    border-style: dashed;
+    border-width: 1px;
+    border-color: #9BBB5D;
+    background-color: #E7FFB8;
+    padding: 2px;
+}
+
+/* Error de validación formulario */
+.input-error{
+    font-size: 13px;
+    color: #BF4949;
+}
+
+
+/* Línea discontínua */
+.line-disc{
+    border-style: dashed;
+    border-width: 1px;
+    border-color: #D6D6D6;
+}
+
+/* Mensaje de error en inputs de login */
+.error-input
+{
+  color: #BA1818;
+  font-size: 12px;
+}
