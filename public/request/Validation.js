@@ -4,10 +4,10 @@ $(document).ready(function(){
 }); // fin document
 
 function store(){
-        var route = 'public/paciente/store';
+        var rout = 'public/paciente/store';
 
         $.ajax({
-                url: route,
+                url: rout,
                 type: 'POST',
                 dataType: 'json',
                 data: $('#FormHistorial').serialize(),
