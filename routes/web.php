@@ -24,4 +24,4 @@ Route::post('logout',[LoginController::class,'logout'])->name('logout');
 Route::get('/index',[FormController::class,'NewRegister'])->name('index');
 Route::get('/paciente',[FormController::class,'Paciente'])->name('paciente');
 
-Route::post('/store',[FormController::class,'store'])->name('store');
+Route::post('public/paciente/store',[FormController::class,'store'])->name('store');

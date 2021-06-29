@@ -4,7 +4,7 @@ $(document).ready(function(){
 }); // fin document
 
 function store(){
-        var route = '/store';
+        var route = 'public/paciente/store';
 
         $.ajax({
                 url: route,

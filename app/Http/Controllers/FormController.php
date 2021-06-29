@@ -15,7 +15,7 @@ class FormController extends Controller
     }
 
     public function Paciente(){
-        return view('HC.Paciente');
+        return view('HC.paciente');
     }
 
     public function store(HistorialRequest $request){

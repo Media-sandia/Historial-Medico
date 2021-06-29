@@ -16,7 +16,7 @@
                             <legend>Datos Generales</legend>
                             <div class="form-row">
 
-                                <div class="col-md-3">
+                                <div class="col-md-3 col-sm-2">
                                     <span class="label-form">Nombre Del Paciente<span class="text-danger">*</span></span>
                                     <div class="input-group">
                                        <input type="text" class="form-control" autocomplete="off" id="Nombre" onkeyup="UperA(this)" name="Nombre">
@@ -24,7 +24,7 @@
                                     <div id="error_tipo_Nombre"></div>
                                 </div>
 
-                                <div class="col-md-2">
+                                <div class="col-md-2 col-sm-2">
                                         <span class="label-form">Fecha De Nacimiento<span class="text-danger">*</span></span>
                                         <div class="input-group">
                                              <input type="date" class="form-control" autocomplete="off" id="Fecha" onkeyup="UperA(this)" name="Fecha">
@@ -32,7 +32,7 @@
                                     <div id="error_tipo_Fecha"></div>
                                 </div>
 
-                                <div class="col-md-2 ml-2">
+                                <div class="col-md-2 col-sm-2 ml-1">
                                     <span class="label-form">Sexo<span class="text-danger">*</span></span>
                                     <div class="input-group">
                                         <div class="form-check form-check-inline">
@@ -41,7 +41,7 @@
                                                     <label class="custom-control-label" for="sexoH">Hombre</label>
                                             </div>
                                         </div>
-                                        <div class="form-check form-check-inline ml-3">
+                                        <div class="form-check form-check-inline">
                                             <div class="custom-control custom-radio">
                                             <input type="radio" class="custom-control-input" id="sexoM" name="Tipo_Sexo" value="Mujer">
                                                 <label class="custom-control-label" for="sexoM">Mujer</label>
@@ -51,7 +51,7 @@
                                     <div id="error_sexo"></div>
                                 </div>
 
-                                <div class="col-md-2">
+                                <div class="col-md-2 col-sm-2">
                                     <span class="label-form">Domicilio<span class="text-danger">*</span></span>
                                     <div class="input-group">
                                         <input type="text" class="form-control" autocomplete="off" id="Domicilio" onkeyup="UperA(this)" name="Domicilio">
@@ -60,7 +60,7 @@
                                 </div>
 
 
-                                <div class="col-md-2">
+                                <div class="col-md-2 col-sm-2">
                                     <span class="label-form">Ciudad<span class="text-danger">*</span></span>
                                     <div class="input-group">
                                         <input type="text" class="form-control" autocomplete="off" id="Ciudad" onkeyup="UperA(this)" name="Ciudad">
@@ -73,7 +73,7 @@
 
                             <div class="form-row">
 
-                                <div class="col-md-3">
+                                <div class="col-md-3 col-sm-2">
                                     <span class="label-form">Municipio<span class="text-danger">*</span></span>
                                     <div class="input-group">
                                         <input type="text" class="form-control" autocomplete="off" id="Municipio" onkeyup="UperA(this)" name="Municipio">
@@ -81,7 +81,7 @@
                                     <div id="error_tipo_Municipio"></div>
                                 </div>
 
-                                 <div class="col-md-2">
+                                 <div class="col-md-2 col-sm-2">
                                     <span class="label-form">C.P<span class="text-danger">*</span></span>
                                     <div class="input-group">
                                         <input type="text" class="form-control" autocomplete="off" id="CP" onkeyup="UperA(this)" name="CP">
@@ -89,7 +89,7 @@
                                     <div id="error_tipo_CP"></div>
                                 </div>
 
-                                <div class="col-md-3">
+                                <div class="col-md-3 col-sm-2">
                                     <span class="label-form">Telefono<span class="text-danger">*</span></span>
                                     <div class="input-group">
                                         <input type="text" class="form-control" autocomplete="off" id="Telefono" onkeyup="UperA(this)" name="Telefono">
@@ -104,7 +104,7 @@
                             <legend>Antecedentes Heredofamiliares</legend>
                             <div class="form-row">
 
-                               <div class="col-md-3">
+                               <div class="col-md-3 col-sm-3">
                                     <span class="label-form">¿Tiene o Ha Tenido Familiares Con Cancer?<span class="text-danger">*</span></span>
                                     <div class="input-group">
                                         <select name="Fcancer" id="Fcancer" class="select2 form-control">
@@ -116,7 +116,7 @@
                                     <div id="error_tipo_Fcancer"></div>
                                 </div>
 
-                                <div class="col-md-3">
+                                <div class="col-md-3 col-sm-2">
                                         <span class="label-form">Especifique<span class="text-danger">*</span></span>
                                         <div class="input-group">
                                             <input type="text" class="form-control" autocomplete="off" onkeyup="UperA(this)" id="EspecifiqueSI" name="EspecifiqueSI">
@@ -124,7 +124,7 @@
                                         <div id="error_EspecifiqueSI"></div>
                                 </div>
 
-                                <div class="col-md-3">
+                                <div class="col-md-3 col-sm-2">
                                     <span class="label-form">¿Tiene Familiares Con Alguna Otra Enfermedad?<span class="text-danger">*</span></span>
                                     <div class="input-group">
                                         <select name="Ncancer" id="Ncancer" class="select2 form-control">
@@ -136,7 +136,7 @@
                                     <div id="error_tipo_Ncancer"></div>
                                 </div>
 
-                                <div class="col-md-3">
+                                <div class="col-md-3 col-sm-2">
                                         <span class="label-form">Especifique<span class="text-danger">*</span></span>
                                         <div class="input-group">
                                             <input type="text" class="form-control" autocomplete="off" onkeyup="UperA(this)" id="EspecifiqueNO" name="EspecifiqueNO">
@@ -150,7 +150,7 @@
                                 <legend>Antecedentes Personales No Patológicos</legend>
                             <div class="form-row">
 
-                                <div class="col-md-2">
+                                <div class="col-md-2 col-sm-2">
                                     <span class="label-form">¿Tiene Alguna Alergia?<span class="text-danger">*</span></span>
                                     <div class="input-group">
                                         <select name="Alergias" id="Alergias" class="select2 form-control">
@@ -162,7 +162,7 @@
                                     <div id="error_tipo_Alergias"></div>
                                 </div>
 
-                                <div class="col-md-2">
+                                <div class="col-md-2 col-sm-1">
                                         <span class="label-form">Especifique<span class="text-danger">*</span></span>
                                         <div class="input-group">
                                             <input type="text" class="form-control" autocomplete="off" onkeyup="UperA(this)" id="EspecifiqueAlergias" name="EspecifiqueAlergias">
@@ -170,7 +170,7 @@
                                         <div id="error_EspecifiqueAlergias"></div>
                                 </div>
 
-                                <div class="col-md-2">
+                                <div class="col-md-2 col-sm-1">
                                     <span class="label-form">¿Fuma?<span class="text-danger">*</span></span>
                                     <div class="input-group">
                                         <select name="Fuma" id="Fuma" class="select2 form-control">
@@ -182,7 +182,7 @@
                                     <div id="error_tipo_Fuma"></div>
                                 </div>
 
-                                <div class="col-md-3">
+                                <div class="col-md-3 col-sm-3">
                                         <span class="label-form">Especifique Tiempo y Cantidad<span class="text-danger">*</span></span>
                                         <div class="input-group">
                                             <input type="text" class="form-control" autocomplete="off" onkeyup="UperA(this)" id="EspecifiqueFuma" name="EspecifiqueFuma">
@@ -190,7 +190,7 @@
                                         <div id="error_EspecifiqueFuma"></div>
                                 </div>
 
-                                <div class="col-md-2">
+                                <div class="col-md-2 col-sm-1">
                                     <span class="label-form">¿Toma?<span class="text-danger">*</span></span>
                                     <div class="input-group">
                                         <select name="Alchol" id="Alchol" class="select2 form-control">
@@ -207,7 +207,7 @@
 
                             <div class="form-row">
 
-                                <div class="col-md-3">
+                                <div class="col-md-3 col-sm-3">
                                         <span class="label-form">Especifique Tiempo y Cantidad <span class="text-danger">*</span></span>
                                         <div class="input-group">
                                             <input type="text" class="form-control" autocomplete="off" onkeyup="UperA(this)" id="EspecifiqueAlchol" name="EspecifiqueAlchol">
@@ -215,7 +215,7 @@
                                         <div id="error_EspecifiqueAlchol"></div>
                                 </div>
 
-                                <div class="col-md-2">
+                                <div class="col-md-2 col-sm-2">
                                         <span class="label-form">¿Sufre de toxicomanías?<span class="text-danger">*</span></span>
                                         <div class="input-group">
                                             <select name="toxicomanías" id="toxicomanías" class="select2 form-control">
@@ -227,7 +227,7 @@
                                         <div id="error_tipo_toxicomanías"></div>
                                 </div>
 
-                                <div class="col-md-3">
+                                <div class="col-md-3 col-sm-3">
                                         <span class="label-form">Especifique Tiempo y Sustancias <span class="text-danger">*</span></span>
                                         <div class="input-group">
                                             <input type="text" class="form-control" autocomplete="off" onkeyup="UperA(this)" id="Especifiquetoxicomanías" name="Especifiquetoxicomanías">
@@ -255,7 +255,7 @@
                                         <div id="error_EspecifiqueAlergias"></div>
                                 </div>-->
 
-                                <div class="col-md-2">
+                                <div class="col-md-2 col-sm-2">
                                     <span class="label-form">Especifique Grupo De Sangre<span class="text-danger">*</span></span>
                                     <div class="input-group">
                                         <input type="text" class="form-control" autocomplete="off" onkeyup="UperA(this)" id="EspecifiqueSangre" name="EspecifiqueSangre">
@@ -263,7 +263,7 @@
                                     <div id="error_tipo_EspecifiqueSangre"></div>
                                 </div>
 
-                                <div class="col-md-2">
+                                <div class="col-md-2 col-sm-2">
                                     <span class="label-form">Especifique RH de Sangre<span class="text-danger">*</span></span>
                                     <div class="input-group">
                                         <input type="text" class="form-control" autocomplete="off" onkeyup="UperA(this)" id="EspecifiqueRH" name="EspecifiqueRH">
@@ -276,7 +276,7 @@
 
                          <div class="form-row">
 
-                                 <div class="col-md-2">
+                                 <div class="col-md-2 col-sm-2">
                                     <span class="label-form">¿Lo Han Operado?<span class="text-danger">*</span></span>
                                     <div class="input-group">
                                         <select name="Operado" id="Operado" class="select2 form-control">
@@ -288,7 +288,7 @@
                                     <div id="error_tipo_Operado"></div>
                                 </div>
 
-                                <div class="col-md-2">
+                                <div class="col-md-2 col-sm-2">
                                         <span class="label-form">¿De Que? <span class="text-danger">*</span></span>
                                         <div class="input-group">
                                             <input type="text" class="form-control" autocomplete="off" onkeyup="UperA(this)" id="EspecifiqueOperado" name="EspecifiqueOperado">
@@ -296,7 +296,7 @@
                                         <div id="error_EspecifiqueOperado"></div>
                                 </div>
 
-                                <div class="col-md-2">
+                                <div class="col-md-2 col-sm-2">
                                     <span class="label-form">¿Le Han Puesto Sangre?<span class="text-danger">*</span></span>
                                     <div class="input-group">
                                         <select name="Transfucion" id="Transfucion" class="select2 form-control">
@@ -308,7 +308,7 @@
                                     <div id="error_tipo_Transfucion"></div>
                                 </div>
 
-                                <div class="col-md-3">
+                                <div class="col-md-3 col-sm-3">
                                         <span class="label-form">Fecha De La Ultima Transfusion <span class="text-danger">*</span></span>
                                         <div class="input-group">
                                             <input type="date" class="form-control" autocomplete="off" onkeyup="UperA(this)" id="FechaTransfucion" name="FechaTransfucion">
@@ -316,7 +316,7 @@
                                         <div id="error_FechaTransfucion"></div>
                                 </div>
 
-                                <div class="col-md-2">
+                                <div class="col-md-2 col-sm-2">
                                     <span class="label-form">¿Ha Tenido Fracturas?<span class="text-danger">*</span></span>
                                     <div class="input-group">
                                         <select name="Fracturas" id="Fracturas" class="select2 form-control">
@@ -333,7 +333,7 @@
 
                          <div class="form-row">
 
-                                <div class="col-md-2">
+                                <div class="col-md-2 col-sm-2">
                                         <span class="label-form">En Donde<span class="text-danger">*</span></span>
                                         <div class="input-group">
                                             <input type="text" class="form-control" autocomplete="off" onkeyup="UperA(this)" id="EspecifiqueFracturas" name="EspecifiqueFracturas">
@@ -341,7 +341,7 @@
                                         <div id="error_EspecifiqueFracturas"></div>
                                 </div>
 
-                                <div class="col-md-3">
+                                <div class="col-md-3 col-sm-3">
                                     <span class="label-form">¿Ha Tenido Infecciones por VHP?<span class="text-danger">*</span></span>
                                     <div class="input-group">
                                         <select name="VHP" id="VHP" class="select2 form-control">
@@ -353,7 +353,7 @@
                                     <div id="error_tipo_VHP"></div>
                                 </div>
 
-                            <div class="col-md-3">
+                            <div class="col-md-3 col-sm-3">
                                     <span class="label-form">¿Ha Tenido Infecciones Hepatitis B?<span class="text-danger">*</span></span>
                                     <div class="input-group">
                                         <select id="HepatitisB" name="HepatitisB" class="select2 form-control">
@@ -365,7 +365,7 @@
                                     <div id="error_tipo_HepatitisB"></div>
                             </div>
 
-                            <div class="col-md-3">
+                            <div class="col-md-3 col-sm-3">
                                     <span class="label-form">¿Ha Tenido Infecciones Hepatitis C?<span class="text-danger">*</span></span>
                                     <div class="input-group">
                                         <select name="HepatitisC" id="HepatitisC" class="select2 form-control">
@@ -381,7 +381,7 @@
                          <br>
 
                         <div class="form-row">
-                             <div class="col-md-2">
+                             <div class="col-md-2 col-sm-2">
                                     <span class="label-form">Escolaridad<span class="text-danger">*</span></span>
                                     <div class="input-group">
                                         <select name="Escolaridad" id="Escolaridad" class="select2 form-control">
@@ -397,7 +397,7 @@
                                     <div id="error_tipo_Escolaridad"></div>
                                 </div>
 
-                                <div class="col-md-2">
+                                <div class="col-md-2 col-sm-2">
                                     <span class="label-form">Estado Civil<span class="text-danger">*</span></span>
                                     <div class="input-group">
                                         <select name="EstadoCivil" id="EstadoCivil" class="select2 form-control">
@@ -412,7 +412,7 @@
                                     <div id="error_tipo_EstadoCivil"></div>
                                 </div>
 
-                                <div class="col-md-2">
+                                <div class="col-md-2 col-sm-2">
                                     <span class="label-form">Ocupacion<span class="text-danger">*</span></span>
                                     <div class="input-group">
                                         <input type="text" class="form-control" autocomplete="off" onkeyup="UperA(this)" id="EspecifiqueOcupacion" name="EspecifiqueOcupacion">
@@ -420,7 +420,7 @@
                                     <div id="error_tipo_Ocupacion"></div>
                                 </div>
 
-                                <div class="col-md-2">
+                                <div class="col-md-2 col-sm-2">
                                     <span class="label-form">Deporte<span class="text-danger">*</span></span>
                                     <div class="input-group">
                                         <input type="text" class="form-control" autocomplete="off" onkeyup="UperA(this)" id="EspecifiqueDeporte" name="EspecifiqueDeporte">
@@ -437,7 +437,7 @@
 
                             <div class="form-row">
 
-                                <div class="col-md-2">
+                                <div class="col-md-2 col-sm-2">
                                     <span class="label-form">¿Padece de Diabetes Mellitus?<span class="text-danger">*</span></span>
                                     <div class="input-group">
                                         <select name="DiabetesM" id="DiabetesM" class="select2 form-control">
@@ -449,7 +449,7 @@
                                     <div id="error_tipo_DiabetesM"></div>
                                 </div>
 
-                                <div class="col-md-3">
+                                <div class="col-md-3 col-sm-3">
                                         <span class="label-form">¿Desde Cuando y que Medicamentos Toma?<span class="text-danger">*</span></span>
                                         <div class="input-group">
                                             <input type="text" class="form-control" autocomplete="off" onkeyup="UperA(this)" id="EspecifiqueDiabetes" name="EspecifiqueDiabetes">
@@ -457,7 +457,7 @@
                                         <div id="error_EspecifiqueDiabetes"></div>
                                 </div>
 
-                                <div class="col-md-3">
+                                <div class="col-md-3 col-sm-2">
                                     <span class="label-form">¿Padece De Impertencion?<span class="text-danger">*</span></span>
                                     <div class="input-group">
                                         <select name="Impertencion" id="Impertencion" class="select2 form-control">
@@ -469,7 +469,7 @@
                                     <div id="error_Ipertencion"></div>
                                 </div>
 
-                                <div class="col-md-3">
+                                <div class="col-md-3 col-sm-3">
                                         <span class="label-form">¿Desde Cuando y que Medicamentos Toma?<span class="text-danger">*</span></span>
                                         <div class="input-group">
                                             <input type="text" class="form-control" autocomplete="off" onkeyup="UperA(this)" id="EspecifiqueIpertencion" name="EspecifiqueIpertencion">
@@ -482,7 +482,7 @@
 
                             <div class="form-row">
 
-                                <div class="col-md-2">
+                                <div class="col-md-2 col-sm-2">
                                     <span class="label-form">¿Padece De Cancer?<span class="text-danger">*</span></span>
                                     <div class="input-group">
                                         <select name="Pcancer" id="Pcancer" class="select2 form-control">
@@ -494,7 +494,7 @@
                                     <div id="error_tipo_Pcancer"></div>
                                 </div>
 
-                                <div class="col-md-3">
+                                <div class="col-md-3 col-sm-3">
                                         <span class="label-form">¿Desde Cuando y que Medicamentos Toma?<span class="text-danger">*</span></span>
                                         <div class="input-group">
                                             <input type="text" class="form-control" autocomplete="off" onkeyup="UperA(this)" id="EspecifiquePcancer" name="EspecifiquePcancer">
@@ -502,7 +502,7 @@
                                         <div id="error_EspecifiquePcancer"></div>
                                 </div>
 
-                                <div class="col-md-2">
+                                <div class="col-md-2 col-sm-2">
                                     <span class="label-form">¿Recibio Radioterapia?<span class="text-danger">*</span></span>
                                     <div class="input-group">
                                         <select name="RT" id="RT" class="select2 form-control">
@@ -514,7 +514,7 @@
                                     <div id="error_tipo_RT"></div>
                                 </div>
 
-                                <div class="col-md-2">
+                                <div class="col-md-2 col-sm-2">
                                         <span class="label-form">Fecha De Aplicacion<span class="text-danger">*</span></span>
                                         <div class="input-group">
                                             <input type="date" class="form-control" autocomplete="off" onkeyup="UperA(this)" id="EspecifiqueRT" name="EspecifiqueRT">
@@ -523,7 +523,7 @@
                                 </div>
 
 
-                                 <div class="col-md-2">
+                                 <div class="col-md-2 col-sm-2">
                                         <span class="label-form">¿En Que Parte?<span class="text-danger">*</span></span>
                                         <div class="input-group">
                                             <select name="PartRT" id="PartRT" class="select2 form-control">
@@ -546,7 +546,7 @@
 
                             <div class="form-row">
 
-                                <div class="col-md-2">
+                                <div class="col-md-2 col-sm-2">
                                     <span class="label-form">¿Recibio Quimioterapia?<span class="text-danger">*</span></span>
                                     <div class="input-group">
                                         <select name="QM" id="QM" class="select2 form-control">
@@ -558,7 +558,7 @@
                                     <div id="error_tipo_QM"></div>
                                 </div>
 
-                                <div class="col-md-2">
+                                <div class="col-md-2 col-sm-2">
                                         <span class="label-form">Fecha De Aplicacion<span class="text-danger">*</span></span>
                                         <div class="input-group">
                                             <input type="date" class="form-control" autocomplete="off" onkeyup="UperA(this)" id="EspecifiqueQM" name="EspecifiqueQM">
@@ -572,7 +572,7 @@
                             <legend>Datos Gineco Obstetrico</legend>
                                 <div class="form-row">
 
-                            <div class="col-md-3">
+                            <div class="col-md-3 col-sm-3">
                                     <span class="label-form">¿Edad De La Primera Menstruacion?<span class="text-danger">*</span></span></span>
                                         <div class="input-group">
                                             <input type="text" class="form-control" autocomplete="off" onkeyup="UperA(this)" id="Menstruacion" name="Menstruacion">
@@ -581,7 +581,7 @@
 
                             </div>
 
-                            <div class="col-md-3">
+                            <div class="col-md-3 col-sm-3">
                                     <span class="label-form">¿Numero De Embarazos Que Ha Tenido?</span>
                                     <div class="input-group">
                                         <input type="text" class="form-control" autocomplete="off" onkeyup="UperA(this)" id="Embarazos" name="Embarazos">
@@ -590,7 +590,7 @@
                             </div>
 
 
-                                <div class="col-md-2">
+                                <div class="col-md-2 col-sm-3">
                                     <span class="label-form">¿Cada Cuando Menstrua?</span>
                                     <div class="input-group">
                                         <input type="text" class="form-control" autocomplete="off" onkeyup="UperA(this)" id="Menstrua" name="Menstrua">
@@ -598,7 +598,7 @@
                                     <div id="error_tipo_Menstrua"></div>
                             </div>
 
-                                <div class="col-md-3">
+                                <div class="col-md-3 col-sm-3">
                                     <span class="label-form">¿Cuanto Dura La Menstruacion?</span>
                                     <div class="input-group">
                                         <input type="text" class="form-control" autocomplete="off" onkeyup="UperA(this)" id="MenstruaD" name="MenstruaD">
@@ -611,7 +611,7 @@
 
                              <div class="form-row">
 
-                                <div class="col-md-3">
+                                <div class="col-md-3 col-sm-3">
                                     <span class="label-form">Fecha Del Ultimo Papanicolaou</span>
                                     <div class="input-group">
                                         <input type="date" class="form-control" autocomplete="off" id="FechaPap" onkeyup="UperA(this)" name="FechaPap">
@@ -619,7 +619,7 @@
                                     <div id="error_tipo_FechaPap"></div>
                                 </div>
 
-                                <div class="col-md-2">
+                                <div class="col-md-2 col-sm-3">
                                     <span class="label-form">Fecha Del Ultima Mastografia</span>
                                     <div class="input-group">
                                         <input type="date" class="form-control" autocomplete="off" id="Mastografia" onkeyup="UperA(this)" name="Mastografia">
@@ -627,7 +627,7 @@
                                     <div id="error_tipo_Mastografia"></div>
                                 </div>
 
-                                <div class="col-md-3">
+                                <div class="col-md-3 col-sm-3">
                                     <span class="label-form">¿Edad En La Que Entro a La Menopausia?</span>
                                     <div class="input-group">
                                         <input type="date" class="form-control" autocomplete="off" id="Menopausia" onkeyup="UperA(this)" name="Menopausia">
