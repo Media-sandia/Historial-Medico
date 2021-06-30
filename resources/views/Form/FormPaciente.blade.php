@@ -1,3 +1,4 @@
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
 <div class="page-wrapper">
         <div class="page-breadcrumb">
             <div class="row">
@@ -16,7 +17,7 @@
                             <legend>Datos Generales</legend>
                             <div class="form-row">
 
-                                <div class="col-md-3 col-sm-2">
+                                <div class="col-sm-3">
                                     <span class="label-form">Nombre Del Paciente<span class="text-danger">*</span></span>
                                     <div class="input-group">
                                        <input type="text" class="form-control" autocomplete="off" id="Nombre" onkeyup="UperA(this)" name="Nombre">
@@ -27,7 +28,7 @@
                                 <div class="col-md-2 col-sm-2">
                                         <span class="label-form">Fecha De Nacimiento<span class="text-danger">*</span></span>
                                         <div class="input-group">
-                                             <input type="date" class="form-control" autocomplete="off" id="Fecha" onkeyup="UperA(this)" name="Fecha">
+                                             <input type="text" class="form-control" placeholder="Seleccione Fecha" autocomplete="off" id="Fecha" name="Fecha">
                                         </div>
                                     <div id="error_tipo_Fecha"></div>
                                 </div>
@@ -311,7 +312,7 @@
                                 <div class="col-md-3 col-sm-3">
                                         <span class="label-form">Fecha De La Ultima Transfusion <span class="text-danger">*</span></span>
                                         <div class="input-group">
-                                            <input type="date" class="form-control" autocomplete="off" onkeyup="UperA(this)" id="FechaTransfucion" name="FechaTransfucion">
+                                            <input type="text" class="form-control" placeholder="Selecione Fecha" autocomplete="off" onkeyup="UperA(this)" id="FechaTransfucion" name="FechaTransfucion">
                                         </div>
                                         <div id="error_FechaTransfucion"></div>
                                 </div>
@@ -517,7 +518,7 @@
                                 <div class="col-md-2 col-sm-2">
                                         <span class="label-form">Fecha De Aplicacion<span class="text-danger">*</span></span>
                                         <div class="input-group">
-                                            <input type="date" class="form-control" autocomplete="off" onkeyup="UperA(this)" id="EspecifiqueRT" name="EspecifiqueRT">
+                                            <input type="text" class="form-control" placeholder="Seleccione Fecha" autocomplete="off" id="EspecifiqueRT" name="EspecifiqueRT">
                                         </div>
                                         <div id="error_EspecifiqueRT"></div>
                                 </div>
@@ -561,7 +562,7 @@
                                 <div class="col-md-2 col-sm-2">
                                         <span class="label-form">Fecha De Aplicacion<span class="text-danger">*</span></span>
                                         <div class="input-group">
-                                            <input type="date" class="form-control" autocomplete="off" onkeyup="UperA(this)" id="EspecifiqueQM" name="EspecifiqueQM">
+                                            <input type="text" class="form-control" autocomplete="off" id="EspecifiqueQM" name="EspecifiqueQM" placeholder="Seleccione Fecha">
                                         </div>
                                         <div id="error_EspecifiqueQM"></div>
                                 </div>
@@ -614,7 +615,7 @@
                                 <div class="col-md-3 col-sm-3">
                                     <span class="label-form">Fecha Del Ultimo Papanicolaou</span>
                                     <div class="input-group">
-                                        <input type="date" class="form-control" autocomplete="off" id="FechaPap" onkeyup="UperA(this)" name="FechaPap">
+                                        <input type="text" class="form-control" autocomplete="off" id="FechaPap" name="FechaPap" placeholder="Seleccione Fecha">
                                     </div>
                                     <div id="error_tipo_FechaPap"></div>
                                 </div>
@@ -622,7 +623,7 @@
                                 <div class="col-md-2 col-sm-3">
                                     <span class="label-form">Fecha Del Ultima Mastografia</span>
                                     <div class="input-group">
-                                        <input type="date" class="form-control" autocomplete="off" id="Mastografia" onkeyup="UperA(this)" name="Mastografia">
+                                        <input type="text" class="form-control" autocomplete="off" id="Mastografia" name="Mastografia" placeholder="Selecione Fecha">
                                     </div>
                                     <div id="error_tipo_Mastografia"></div>
                                 </div>
@@ -651,4 +652,5 @@
 
     </div><!--End  Page-Wrapper-->
     <script src="jquery/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
     <script src="request/Validation.js"></script>

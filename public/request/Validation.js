@@ -1,6 +1,12 @@
 $(document).ready(function(){
          disable();
         select();
+        flatpickr('#Fecha',{dateFormat: "Y-m-d", maxDate:"today"});
+        flatpickr('#FechaTransfucion',{dateFormat: "Y-m-d", maxDate:"today"});
+        flatpickr('#EspecifiqueRT',{dateFormat: "Y-m-d", maxDate:"today"});
+        flatpickr('#EspecifiqueQM',{dateFormat: "Y-m-d", maxDate:"today"});
+        flatpickr('#FechaPap',{dateFormat: "Y-m-d", maxDate:"today"});
+        flatpickr('#Mastografia',{dateFormat: "Y-m-d", maxDate:"today"});
 }); // fin document
 
 function store(){

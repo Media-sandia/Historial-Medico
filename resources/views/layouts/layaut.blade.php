@@ -17,6 +17,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
     <link media="all" type="text/css" rel="stylesheet" href="http://digital:81/siseg/public/dist/css/icons/font-awesome/css/fontawesome.css">
 
+
 </head>
 <body>
 
@@ -163,7 +164,6 @@
 
     </div>
    </div> <!--End Wrapper-->
-
     <script src="assets/lib/js/jquery/jquery.min.js"></script>
     <!-- Bootstrap tether Core JavaScript -->
     <script src="assets/lib/js/popper.min.js"></script>
