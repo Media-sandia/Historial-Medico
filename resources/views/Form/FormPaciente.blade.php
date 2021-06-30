@@ -631,7 +631,7 @@
                                 <div class="col-md-3 col-sm-3">
                                     <span class="label-form">¿Edad En La Que Entro a La Menopausia?</span>
                                     <div class="input-group">
-                                        <input type="date" class="form-control" autocomplete="off" id="Menopausia" onkeyup="UperA(this)" name="Menopausia">
+                                        <input type="text" class="form-control" autocomplete="off" id="Menopausia" onkeyup="UperA(this)" name="Menopausia">
                                     </div>
                                     <div id="error_tipo_Menopausia"></div>
                                 </div>
