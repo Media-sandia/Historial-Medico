@@ -100,7 +100,7 @@
 
                             </div>
                         </fieldset> <!--End fieldset-->
-
+                        <br>
                         <fieldset class="fieldset-form">
                             <legend>Antecedentes Heredofamiliares</legend>
                             <div class="form-row">
@@ -146,7 +146,7 @@
                                 </div>
                                 </div><!--End row-->
                             </fieldset>
-
+                            <br>
                             <fieldset class="fieldset-form">
                                 <legend>Antecedentes Personales No Patológicos</legend>
                             <div class="form-row">
@@ -429,10 +429,8 @@
                                     <div id="error_tipo_Deporte"></div>
                                 </div>
                         </div>
-
-
                         </fieldset><!--End fieldset-->
-
+                        <br>
                         <fieldset class="fieldset-form">
                             <legend>Antecedentes Patológicos</legend>
 
@@ -568,7 +566,7 @@
                                 </div>
                             </div><!--End row-->
                             </fieldset>
-
+                            <br>
                         <fieldset class="fieldset-form">
                             <legend>Datos Gineco Obstetrico</legend>
                                 <div class="form-row">
@@ -643,7 +641,7 @@
                     </form><!--End Form-->
 
                     <div align="right">
-                        <button onclick="store()" class="btn btn-outline-primary btn-rounded mb-2 mr-3">Guardar</button>
+                        <button onclick="store()" class="btn btn-outline-success btn-rounded mb-2 mr-3">Guardar</button>
                     </div>
                 </div>
 

@@ -130,11 +130,11 @@
                                 </a>
                             </li>
 
-                            <li class="sidebar-item">
+                            <!--<li class="sidebar-item">
                                 <a href="#" class="sidebar-link">
                                     <i class="fas fa-file-alt"></i> <span class="hide-menu">Consultar</span>
                                 </a>
-                            </li>
+                            </li>-->
 
                         </ul><!-- Fin primer nivel -->
                     </li> <!-- Fin Inventario -->
