@@ -108,7 +108,7 @@
                                <div class="col-md-3 col-sm-3">
                                     <span class="label-form">¿Tiene o Ha Tenido Familiares Con Cancer?<span class="text-danger">*</span></span>
                                     <div class="input-group">
-                                        <select name="Fcancer" id="Fcancer" class="form-control js-example-basic-single">
+                                        <select name="Fcancer" id="Fcancer" class="form-control select2">
                                         <option selected="selected" value="">- Selecciona -</option>
                                         <option value="Si">Si</option>
                                         <option value="No">No</option>
@@ -128,7 +128,7 @@
                                 <div class="col-md-3">
                                     <span class="label-form">¿Tiene Familiares Con Alguna Otra Enfermedad?<span class="text-danger">*</span></span>
                                     <div class="input-group">
-                                        <select name="Ncancer" id="Ncancer" class="form-control js-example-basic-single">
+                                        <select name="Ncancer" id="Ncancer" class="form-control select2">
                                         <option selected="selected" value="">- Selecciona -</option>
                                         <option value="Si">Si</option>
                                         <option value="No">No</option>
