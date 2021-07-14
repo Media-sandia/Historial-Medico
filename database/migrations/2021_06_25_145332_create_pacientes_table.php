@@ -58,11 +58,15 @@ class CreatePacientesTable extends Migration
             $table->string('Medicamentos_Impertencion');
             $table->string('Cancer');
             $table->string('Especifique_Cancer');
+            $table->string('Otro_Cancer');
+            $table->string('Especifique_Cancer_otro')->nullable($value = true);
             $table->string('RT');
             $table->string('Fecha_RT')->nullable($value = true);
             $table->string('Parte_RT');
             $table->string('QM');
             $table->string('Fecha_QM')->nullable($value = true);
+            $table->string('Inmunoterapia');
+            $table->string('Fecha_Inmunoterapia')->nullable($value = true);
             //Datos Gineco Obstetrico
             $table->string('Edad_Menstruacion');
             $table->string('Numero_Embarazos');

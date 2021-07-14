@@ -8,7 +8,7 @@
     <title>Historial | Medico </title>
     <link rel="shortcut icon" type="image/png" href="favicon.ico">
     <!-- Select2 -->
-    <link media="all" type="text/css" rel="stylesheet" href="assets/lib/css/select2.min.css">
+    <!--<link media="all" type="text/css" rel="stylesheet" href="assets/lib/css/select2.min.css">-->
     <!--Toastr -->
     <link media="all" type="text/css" rel="stylesheet" href="assets/lib/css/toastr.css">
     <link media="all" type="text/css" rel="stylesheet" href="assets/lib/css/dropzone.css">
@@ -16,6 +16,7 @@
     <link media="all" type="text/css" rel="stylesheet" href="assets/lib/css/custom_style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
     <link media="all" type="text/css" rel="stylesheet" href="http://digital:81/siseg/public/dist/css/icons/font-awesome/css/fontawesome.css">
+    <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
 
 
 </head>
@@ -173,8 +174,8 @@
     <script src="assets/lib/js/app.init.mini-sidebar.js"></script>
     <script src="assets/lib/js/app-style-switcher.js"></script>
     <!-- Select2 -->
-    <script src="assets/lib/js/select2.full.min.js"></script>
-    <script src="assets/lib/js/select2.min.js"></script>
+    <!--<script src="assets/lib/js/select2.full.min.js"></script>
+    <script src="assets/lib/js/select2.min.js"></script>-->
     <!-- slimscrollbar scrollbar JavaScript -->
     <script src="assets/lib/js/perfect-scrollbar.jquery.min.js"></script>
     <script src="assets/lib/js/sparkline.js"></script>
@@ -190,6 +191,7 @@
     <script src="assets/lib/js/dropzone.js"></script>
 
     <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
 
     <script >
       $('.toastrDefaultError').click(function() {

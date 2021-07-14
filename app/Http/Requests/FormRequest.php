@@ -72,6 +72,8 @@ class FormRequest extends FormRequest
             'PartRT'=>'required',
             'QM'=>'required',
             'EspecifiqueQM'=>'required',
+            'inmunoterapia'=>'required',
+            'FechaInmune'=>'required',
             //Datos Gineco Obstetrico
             'Menstruacion'=>'required',
             'Embarazos'=>'required',
@@ -133,6 +135,8 @@ class FormRequest extends FormRequest
             'PartRT.required'=>'Este Campo Es Requerido',
             'QM.required'=>'Este Campo Es Requerido',
             'EspecifiqueQM.required' =>'Este Campo Es Requerido',
+            'inmunoterapia.required'=>'Este Campo Es Requerido',
+            'FechaInmune.required'=>'Este Campo Es Requerido',
             //Datos Gineco Obstetrico
             'Menstruacion.required'=>'Este Campo Es Requerido',
             'Embarazos.required'=>'Este Campo Es Requerido',

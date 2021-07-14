@@ -64,11 +64,15 @@ class FormController extends Controller
         $NewHistorial->Medicamentos_Impertencion = $request->EspecifiqueIpertencion;
         $NewHistorial->Cancer = $request->Pcancer;
         $NewHistorial->Especifique_Cancer = $request->EspecifiquePcancer;
+        $NewHistorial->Otro_Cancer = $request->Otro;
+        $NewHistorial->Especifique_Cancer_otro = $request->OtroEspecifique;
         $NewHistorial->RT = $request->RT;
         $NewHistorial->Fecha_RT = $request->EspecifiqueRT;
         $NewHistorial->Parte_RT = $request->PartRT;
         $NewHistorial->QM = $request->QM;
         $NewHistorial->Fecha_QM = $request->EspecifiqueQM;
+        $NewHistorial->Inmunoterapia = $request->inmunoterapia;
+        $NewHistorial->Fecha_Inmunoterapia = $request->FechaInmune;
         //Datos Gineco Obstetrico
         $NewHistorial->Edad_Menstruacion = $request->Menstruacion;
         $NewHistorial->Numero_Embarazos = $request->Embarazos;

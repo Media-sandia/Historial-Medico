@@ -1,10 +1,11 @@
 $(document).ready(function(){
-         disable();
+     $(".select2").select2({
+        width:'100%',
+     });
+        disable();
         select();
         flatpickr('#Fecha',{dateFormat: "Y-m-d", maxDate:"today"});
         flatpickr('#FechaTransfucion',{dateFormat: "Y-m-d", maxDate:"today"});
-        flatpickr('#EspecifiqueRT',{dateFormat: "Y-m-d", maxDate:"today"});
-        flatpickr('#EspecifiqueQM',{dateFormat: "Y-m-d", maxDate:"today"});
         flatpickr('#FechaPap',{dateFormat: "Y-m-d", maxDate:"today"});
         flatpickr('#Mastografia',{dateFormat: "Y-m-d", maxDate:"today"});
 }); // fin document
@@ -38,7 +39,6 @@ function store(){
 function UperA(srt){
         srt.value = srt.value.split(" ").map( e => e[0].toUpperCase() + e.slice(1)).join(" ");
 }
-
 
 function ShowValitation(data){
 
@@ -295,6 +295,12 @@ function ShowValitation(data){
         $('#error_EspecifiquePcancer ').append( "<font color='#BF4949' size='2' id='error_first_EspecifiquePcancer'>" + jsonData.errors.EspecifiquePcancer + "</font>");
     }
 
+     $( '#error_first_Otro' ).remove();
+    if( jsonData.errors.Otro != null )
+    {
+        $('#error_tipo_Otro ').append( "<font color='#BF4949' size='2' id='error_first_Otro'>" + jsonData.errors.Otro + "</font>");
+    }
+
     $( '#error_first_RT' ).remove();
     if( jsonData.errors.RT != null )
     {
@@ -323,6 +329,12 @@ function ShowValitation(data){
     if( jsonData.errors.EspecifiqueQM != null )
     {
         $('#error_EspecifiqueQM ').append( "<font color='#BF4949' size='2' id='error_first_EspecifiqueQM'>" + jsonData.errors.EspecifiqueQM + "</font>");
+    }
+
+    $( '#error_first_inmunoterapia' ).remove();
+    if( jsonData.errors.inmunoterapia != null )
+    {
+        $('#error_tipo_inmunoterapia ').append( "<font color='#BF4949' size='2' id='error_first_inmunoterapia'>" + jsonData.errors.inmunoterapia + "</font>");
     }
 
     $( '#error_first_Menstruacion' ).remove();
@@ -381,10 +393,14 @@ function ResetForm(){
         $('#DiabetesM' ).val('').trigger('change');
         $('#Impertencion' ).val('').trigger('change');
         $('#Pcancer' ).val('').trigger('change');
+        $('#Otro').val('').trigger('change');
+        $('#inmunoterapia').val('').trigger('change');
         CleanValidation()
 }// fin ResetForm
 
 function CleanValidation(){
+         $('#error_tipo_Otro').remove();
+         $('#error_tipo_inmunoterapia').remove();
          $('#error_first_Nombre').remove();
          $('#error_first_Fecha').remove();
          $('#error_first_Domicilio').remove();
@@ -567,6 +583,25 @@ function select(){
                  $('#EspecifiquePcancer').val('');
                 }
         });
+
+        $('#Otro').change(function(){
+                if($(this).val() === "No"){
+                  $('#OtroEspecifique').val('No Aplica').addClass('text-danger');
+                }
+                else{
+                 $('#OtroEspecifique').val('');
+                }
+        });
+
+        $('#inmunoterapia').change(function(){
+                if($(this).val() === "No"){
+                  $('#FechaInmune').val('No Aplica').addClass('text-danger');
+                }
+                else{
+                 $('#FechaInmune').val('');
+                }
+        });
+
         /**$('#').change(function(){
                 if($(this).val() === "Si"){
                   $('#EspecifiqueAlergias').val('');

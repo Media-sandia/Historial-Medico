@@ -10,7 +10,7 @@
 
         <div class="container-fluid">
             <div class="card">
-                <div class="car-body m-4">
+                <div class="car-body m-2">
                     <form method="POST" action="#" accept-charset="UTF-8"  class="form-horizontal" id="FormHistorial">
                         {{csrf_field()}}
                         <fieldset class="fieldset-form">
@@ -108,7 +108,7 @@
                                <div class="col-md-3 col-sm-3">
                                     <span class="label-form">¿Tiene o Ha Tenido Familiares Con Cancer?<span class="text-danger">*</span></span>
                                     <div class="input-group">
-                                        <select name="Fcancer" id="Fcancer" class="select2 form-control">
+                                        <select name="Fcancer" id="Fcancer" class="form-control js-example-basic-single">
                                         <option selected="selected" value="">- Selecciona -</option>
                                         <option value="Si">Si</option>
                                         <option value="No">No</option>
@@ -117,7 +117,7 @@
                                     <div id="error_tipo_Fcancer"></div>
                                 </div>
 
-                                <div class="col-md-3 col-sm-2">
+                                <div class="col-md-3">
                                         <span class="label-form">Especifique<span class="text-danger">*</span></span>
                                         <div class="input-group">
                                             <input type="text" class="form-control" autocomplete="off" onkeyup="UperA(this)" id="EspecifiqueSI" name="EspecifiqueSI">
@@ -125,10 +125,10 @@
                                         <div id="error_EspecifiqueSI"></div>
                                 </div>
 
-                                <div class="col-md-3 col-sm-2">
+                                <div class="col-md-3">
                                     <span class="label-form">¿Tiene Familiares Con Alguna Otra Enfermedad?<span class="text-danger">*</span></span>
                                     <div class="input-group">
-                                        <select name="Ncancer" id="Ncancer" class="select2 form-control">
+                                        <select name="Ncancer" id="Ncancer" class="form-control js-example-basic-single">
                                         <option selected="selected" value="">- Selecciona -</option>
                                         <option value="Si">Si</option>
                                         <option value="No">No</option>
@@ -137,7 +137,7 @@
                                     <div id="error_tipo_Ncancer"></div>
                                 </div>
 
-                                <div class="col-md-3 col-sm-2">
+                                <div class="col-md-3">
                                         <span class="label-form">Especifique<span class="text-danger">*</span></span>
                                         <div class="input-group">
                                             <input type="text" class="form-control" autocomplete="off" onkeyup="UperA(this)" id="EspecifiqueNO" name="EspecifiqueNO">
@@ -154,7 +154,7 @@
                                 <div class="col-md-2 col-sm-2">
                                     <span class="label-form">¿Tiene Alguna Alergia?<span class="text-danger">*</span></span>
                                     <div class="input-group">
-                                        <select name="Alergias" id="Alergias" class="select2 form-control">
+                                        <select name="Alergias" id="Alergias" class="form-control select2">
                                         <option selected="selected" value="">- Selecciona -</option>
                                         <option value="Si">Si</option>
                                         <option value="No">No</option>
@@ -174,7 +174,7 @@
                                 <div class="col-md-2 col-sm-1">
                                     <span class="label-form">¿Fuma?<span class="text-danger">*</span></span>
                                     <div class="input-group">
-                                        <select name="Fuma" id="Fuma" class="select2 form-control">
+                                        <select name="Fuma" id="Fuma" class="form-control select2">
                                         <option selected="selected" value="">- Selecciona -</option>
                                         <option value="Si">Si</option>
                                         <option value="No">No</option>
@@ -192,9 +192,9 @@
                                 </div>
 
                                 <div class="col-md-2 col-sm-1">
-                                    <span class="label-form">¿Toma?<span class="text-danger">*</span></span>
+                                    <span class="label-form">¿Toma Alcohol?<span class="text-danger">*</span></span>
                                     <div class="input-group">
-                                        <select name="Alchol" id="Alchol" class="select2 form-control">
+                                        <select name="Alchol" id="Alchol" class="form-control select2">
                                         <option selected="selected" value="">- Selecciona -</option>
                                         <option value="Si">Si</option>
                                         <option value="No">No</option>
@@ -217,9 +217,9 @@
                                 </div>
 
                                 <div class="col-md-2 col-sm-2">
-                                        <span class="label-form">¿Sufre de toxicomanías?<span class="text-danger">*</span></span>
+                                        <span class="label-form">¿Tiene Alguna Adiccion?<span class="text-danger">*</span></span>
                                         <div class="input-group">
-                                            <select name="toxicomanías" id="toxicomanías" class="select2 form-control">
+                                            <select name="toxicomanías" id="toxicomanías" class="form-control select2">
                                             <option selected="selected" value="">- Selecciona -</option>
                                             <option value="Si">Si</option>
                                             <option value="No">No</option>
@@ -229,7 +229,7 @@
                                 </div>
 
                                 <div class="col-md-3 col-sm-3">
-                                        <span class="label-form">Especifique Tiempo y Sustancias <span class="text-danger">*</span></span>
+                                        <span class="label-form">¿De Que y Cuando? <span class="text-danger">*</span></span>
                                         <div class="input-group">
                                             <input type="text" class="form-control" autocomplete="off" onkeyup="UperA(this)" id="Especifiquetoxicomanías" name="Especifiquetoxicomanías">
                                         </div>
@@ -259,7 +259,14 @@
                                 <div class="col-md-2 col-sm-2">
                                     <span class="label-form">Especifique Grupo De Sangre<span class="text-danger">*</span></span>
                                     <div class="input-group">
-                                        <input type="text" class="form-control" autocomplete="off" onkeyup="UperA(this)" id="EspecifiqueSangre" name="EspecifiqueSangre">
+                                        <select name="EspecifiqueSangre" id="EspecifiqueSangre" class="form-control select2">
+                                            <option selected="selected" value=" ">- Selecciona -</option>
+                                            <option value="Desconoce">Desconoce</option>
+                                            <option value="O">O</option>
+                                            <option value="A">A</option>
+                                            <option value="B">B</option>
+                                            <option value="AB">AB</option>
+                                        </select>
                                     </div>
                                     <div id="error_tipo_EspecifiqueSangre"></div>
                                 </div>
@@ -267,7 +274,12 @@
                                 <div class="col-md-2 col-sm-2">
                                     <span class="label-form">Especifique RH de Sangre<span class="text-danger">*</span></span>
                                     <div class="input-group">
-                                        <input type="text" class="form-control" autocomplete="off" onkeyup="UperA(this)" id="EspecifiqueRH" name="EspecifiqueRH">
+                                        <select name="EspecifiqueRH" id="EspecifiqueRH" class="form-control select2">
+                                        <option selected="selected" value="">- Selecciona -</option>
+                                        <option value="Desconoce">Desconoce</option>
+                                        <option value="+">+</option>
+                                        <option value="-">-</option>
+                                        </select>
                                     </div>
                                     <div id="error_tipo_EspecifiqueRH"></div>
                                 </div>
@@ -280,7 +292,7 @@
                                  <div class="col-md-2 col-sm-2">
                                     <span class="label-form">¿Lo Han Operado?<span class="text-danger">*</span></span>
                                     <div class="input-group">
-                                        <select name="Operado" id="Operado" class="select2 form-control">
+                                        <select name="Operado" id="Operado" class="form-control select2">
                                         <option selected="selected" value="">- Selecciona -</option>
                                         <option value="Si">Si</option>
                                         <option value="No">No</option>
@@ -300,7 +312,7 @@
                                 <div class="col-md-2 col-sm-2">
                                     <span class="label-form">¿Le Han Puesto Sangre?<span class="text-danger">*</span></span>
                                     <div class="input-group">
-                                        <select name="Transfucion" id="Transfucion" class="select2 form-control">
+                                        <select name="Transfucion" id="Transfucion" class="form-control select2">
                                         <option selected="selected" value="">- Selecciona -</option>
                                         <option value="Si">Si</option>
                                         <option value="No">No</option>
@@ -320,7 +332,7 @@
                                 <div class="col-md-2 col-sm-2">
                                     <span class="label-form">¿Ha Tenido Fracturas?<span class="text-danger">*</span></span>
                                     <div class="input-group">
-                                        <select name="Fracturas" id="Fracturas" class="select2 form-control">
+                                        <select name="Fracturas" id="Fracturas" class="form-control select2">
                                         <option selected="selected" value="">- Selecciona -</option>
                                         <option value="Si">Si</option>
                                         <option value="No">No</option>
@@ -328,7 +340,7 @@
                                     </div>
                                     <div id="error_tipo_Fracturas"></div>
                                 </div>
-                            </div>
+                            </div><!--End row-->
 
                          <br>
 
@@ -342,50 +354,10 @@
                                         <div id="error_EspecifiqueFracturas"></div>
                                 </div>
 
-                                <div class="col-md-3 col-sm-3">
-                                    <span class="label-form">¿Ha Tenido Infecciones por VHP?<span class="text-danger">*</span></span>
-                                    <div class="input-group">
-                                        <select name="VHP" id="VHP" class="select2 form-control">
-                                        <option selected="selected" value=" ">- Selecciona -</option>
-                                        <option value="Si">Si</option>
-                                        <option value="No">No</option>
-                                        </select>
-                                    </div>
-                                    <div id="error_tipo_VHP"></div>
-                                </div>
-
-                            <div class="col-md-3 col-sm-3">
-                                    <span class="label-form">¿Ha Tenido Infecciones Hepatitis B?<span class="text-danger">*</span></span>
-                                    <div class="input-group">
-                                        <select id="HepatitisB" name="HepatitisB" class="select2 form-control">
-                                        <option selected="selected">- Selecciona -</option>
-                                        <option value="Si">Si</option>
-                                        <option value="No">No</option>
-                                        </select>
-                                    </div>
-                                    <div id="error_tipo_HepatitisB"></div>
-                            </div>
-
-                            <div class="col-md-3 col-sm-3">
-                                    <span class="label-form">¿Ha Tenido Infecciones Hepatitis C?<span class="text-danger">*</span></span>
-                                    <div class="input-group">
-                                        <select name="HepatitisC" id="HepatitisC" class="select2 form-control">
-                                        <option selected="selected" value="">- Selecciona -</option>
-                                        <option value="Si">Si</option>
-                                        <option value="No">No</option>
-                                        </select>
-                                    </div>
-                                    <div id="error_tipo_HepatitisC"></div>
-                            </div>
-                         </div>
-
-                         <br>
-
-                        <div class="form-row">
-                             <div class="col-md-2 col-sm-2">
+                                <div class="col-md-2 col-sm-2">
                                     <span class="label-form">Escolaridad<span class="text-danger">*</span></span>
                                     <div class="input-group">
-                                        <select name="Escolaridad" id="Escolaridad" class="select2 form-control">
+                                        <select name="Escolaridad" id="Escolaridad" class="form-control select2">
                                         <option selected="selected" value="">- Selecciona -</option>
                                         <option value="Desconoce">Desconoce</option>
                                         <option value="Primaria">Primaria</option>
@@ -401,7 +373,7 @@
                                 <div class="col-md-2 col-sm-2">
                                     <span class="label-form">Estado Civil<span class="text-danger">*</span></span>
                                     <div class="input-group">
-                                        <select name="EstadoCivil" id="EstadoCivil" class="select2 form-control">
+                                        <select name="EstadoCivil" id="EstadoCivil" class="form-control select2">
                                         <option selected="selected" value=" ">- Selecciona -</option>
                                         <option value="Soltero(a)">Soltero(a)</option>
                                         <option value="Union Libre">Union Libre</option>
@@ -413,7 +385,7 @@
                                     <div id="error_tipo_EstadoCivil"></div>
                                 </div>
 
-                                <div class="col-md-2 col-sm-2">
+                                 <div class="col-md-2 col-sm-2">
                                     <span class="label-form">Ocupacion<span class="text-danger">*</span></span>
                                     <div class="input-group">
                                         <input type="text" class="form-control" autocomplete="off" onkeyup="UperA(this)" id="EspecifiqueOcupacion" name="EspecifiqueOcupacion">
@@ -428,7 +400,8 @@
                                     </div>
                                     <div id="error_tipo_Deporte"></div>
                                 </div>
-                        </div>
+                         </div><!--End row-->
+                            <br>
                         </fieldset><!--End fieldset-->
                         <br>
                         <fieldset class="fieldset-form">
@@ -436,10 +409,10 @@
 
                             <div class="form-row">
 
-                                <div class="col-md-2 col-sm-2">
+                                <div class="col-md-2">
                                     <span class="label-form">¿Padece de Diabetes Mellitus?<span class="text-danger">*</span></span>
                                     <div class="input-group">
-                                        <select name="DiabetesM" id="DiabetesM" class="select2 form-control">
+                                        <select name="DiabetesM" id="DiabetesM" class="form-control select2">
                                         <option selected="selected" value="">- Selecciona -</option>
                                         <option value="Si">Si</option>
                                         <option value="No">No</option>
@@ -457,9 +430,9 @@
                                 </div>
 
                                 <div class="col-md-3 col-sm-2">
-                                    <span class="label-form">¿Padece De Impertencion?<span class="text-danger">*</span></span>
+                                    <span class="label-form">¿Padece De Hipertencion Arterial?<span class="text-danger">*</span></span>
                                     <div class="input-group">
-                                        <select name="Impertencion" id="Impertencion" class="select2 form-control">
+                                        <select name="Impertencion" id="Impertencion" class="form-control select2">
                                         <option selected="selected" value="">- Selecciona -</option>
                                         <option value="Si">Si</option>
                                         <option value="No">No</option>
@@ -476,15 +449,13 @@
                                         <div id="error_EspecifiqueIpertencion"></div>
                                 </div>
                             </div><!--End row-->
-
                                 <br>
-
                             <div class="form-row">
 
                                 <div class="col-md-2 col-sm-2">
                                     <span class="label-form">¿Padece De Cancer?<span class="text-danger">*</span></span>
                                     <div class="input-group">
-                                        <select name="Pcancer" id="Pcancer" class="select2 form-control">
+                                        <select name="Pcancer" id="Pcancer" class="form-control select2">
                                         <option selected="selected" value="">- Selecciona -</option>
                                         <option value="Si">Si</option>
                                         <option value="No">No</option>
@@ -502,9 +473,36 @@
                                 </div>
 
                                 <div class="col-md-2 col-sm-2">
+                                    <span class="label-form">¿Ha Tenido Otro Tipo De Cancer?<span class="text-danger">*</span></span>
+                                    <div class="input-group">
+                                        <select name="Otro" id="Otro" class="form-control select2">
+                                        <option selected="selected" value=" ">- Selecciona -</option>
+                                        <option value="Si">Si</option>
+                                        <option value="No">No</option>
+                                        </select>
+                                    </div>
+                                    <div id="error_tipo_Otro"></div>
+                                </div>
+
+                                <div class="col-md-3 col-sm-3">
+                                        <span class="label-form">¿Cuando Y En Donde?<span class="text-danger">*</span></span>
+                                        <div class="input-group">
+                                            <input type="text" class="form-control" autocomplete="off" onkeyup="UperA(this)" id="OtroEspecifique" name="OtroEspecifique">
+                                        </div>
+                                        <div id="error_OtroEspecifique"></div>
+                                </div>
+
+
+                            </div><!--End row-->
+
+                            <br>
+
+                            <div class="form-row">
+
+                                  <div class="col-md-2 col-sm-2">
                                     <span class="label-form">¿Recibio Radioterapia?<span class="text-danger">*</span></span>
                                     <div class="input-group">
-                                        <select name="RT" id="RT" class="select2 form-control">
+                                        <select name="RT" id="RT" class="form-control select2">
                                         <option selected="selected" value="">- Selecciona -</option>
                                         <option value="Si">Si</option>
                                         <option value="No">No</option>
@@ -514,18 +512,17 @@
                                 </div>
 
                                 <div class="col-md-2 col-sm-2">
-                                        <span class="label-form">Fecha De Aplicacion<span class="text-danger">*</span></span>
+                                        <span class="label-form">¿En Que Año?<span class="text-danger">*</span></span>
                                         <div class="input-group">
-                                            <input type="text" class="form-control" placeholder="Seleccione Fecha" autocomplete="off" id="EspecifiqueRT" name="EspecifiqueRT">
+                                            <input type="text" class="form-control" placeholder="Tiempo Aproximado" autocomplete="off" id="EspecifiqueRT" name="EspecifiqueRT">
                                         </div>
                                         <div id="error_EspecifiqueRT"></div>
                                 </div>
 
-
-                                 <div class="col-md-2 col-sm-2">
+                                <div class="col-md-2 col-sm-2">
                                         <span class="label-form">¿En Que Parte?<span class="text-danger">*</span></span>
                                         <div class="input-group">
-                                            <select name="PartRT" id="PartRT" class="select2 form-control">
+                                            <select name="PartRT" id="PartRT" class="form-control select2">
                                                 <option selected="selected" value="">- Selecciona -</option>
                                                  <option value="No Aplica">No Aplica</option>
                                                 <option value="Cabeza">Cabeza</option>
@@ -539,16 +536,10 @@
                                         <div id="error_PartRT"></div>
                                 </div>
 
-                            </div><!--End row-->
-
-                            <br>
-
-                            <div class="form-row">
-
                                 <div class="col-md-2 col-sm-2">
                                     <span class="label-form">¿Recibio Quimioterapia?<span class="text-danger">*</span></span>
                                     <div class="input-group">
-                                        <select name="QM" id="QM" class="select2 form-control">
+                                        <select name="QM" id="QM" class="form-control select2">
                                         <option selected="selected" value="">- Selecciona -</option>
                                         <option value="Si">Si</option>
                                         <option value="No">No</option>
@@ -558,13 +549,75 @@
                                 </div>
 
                                 <div class="col-md-2 col-sm-2">
-                                        <span class="label-form">Fecha De Aplicacion<span class="text-danger">*</span></span>
+                                        <span class="label-form">¿En Que Año?<span class="text-danger">*</span></span>
                                         <div class="input-group">
-                                            <input type="text" class="form-control" autocomplete="off" id="EspecifiqueQM" name="EspecifiqueQM" placeholder="Seleccione Fecha">
+                                            <input type="text" class="form-control" autocomplete="off" id="EspecifiqueQM" name="EspecifiqueQM" placeholder="">
                                         </div>
                                         <div id="error_EspecifiqueQM"></div>
                                 </div>
                             </div><!--End row-->
+                                <br>
+                            <div class="form-row">
+                                 <div class="col-md-2 col-sm-2">
+                                    <span class="label-form">¿Recibio inmunoterapia?<span class="text-danger">*</span></span>
+                                    <div class="input-group">
+                                        <select name="inmunoterapia" id="inmunoterapia" class="form-control select2">
+                                        <option selected="selected" value=" ">- Selecciona -</option>
+                                        <option value="Si">Si</option>
+                                        <option value="No">No</option>
+                                        </select>
+                                    </div>
+                                    <div id="error_tipo_inmunoterapia"></div>
+                                </div>
+
+                                <div class="col-md-2 col-sm-2">
+                                        <span class="label-form">¿Fecha Aproximada?<span class="text-danger">*</span></span>
+                                        <div class="input-group">
+                                            <input type="text" class="form-control" placeholder="Tiempo Aproximado" autocomplete="off" id="FechaInmune" name="FechaInmune">
+                                        </div>
+                                        <div id="error_FechaInmune"></div>
+                                </div>
+
+                                <div class="col-md-3 col-sm-3">
+                                    <span class="label-form">¿Ha Tenido Infecciones por VHP?<span class="text-danger">*</span></span>
+                                    <div class="input-group">
+                                        <select name="VHP" id="VHP" class="form-control select2">
+                                        <option selected="selected" value=" ">- Selecciona -</option>
+                                        <option value="Si">Si</option>
+                                        <option value="No">No</option>
+                                        </select>
+                                    </div>
+                                    <div id="error_tipo_VHP"></div>
+                                </div>
+
+                                <div class="col-md-3 col-sm-3">
+                                    <span class="label-form">¿Ha Tenido Infecciones Hepatitis B?<span class="text-danger">*</span></span>
+                                    <div class="input-group">
+                                        <select id="HepatitisB" name="HepatitisB" class="form-control select2">
+                                        <option selected="selected">- Selecciona -</option>
+                                        <option value="Si">Si</option>
+                                        <option value="No">No</option>
+                                        </select>
+                                    </div>
+                                    <div id="error_tipo_HepatitisB"></div>
+                                </div>
+                            </div><!--End row-->
+                                <br>
+
+                            <div class="form-row">
+                                 <div class="col-md-3 col-sm-3">
+                                    <span class="label-form">¿Ha Tenido Infecciones Hepatitis C?<span class="text-danger">*</span></span>
+                                    <div class="input-group">
+                                        <select name="HepatitisC" id="HepatitisC" class="form-control select2">
+                                        <option selected="selected" value="">- Selecciona -</option>
+                                        <option value="Si">Si</option>
+                                        <option value="No">No</option>
+                                        </select>
+                                    </div>
+                                    <div id="error_tipo_HepatitisC"></div>
+                            </div>
+
+                            </div>
                             </fieldset>
                             <br>
                         <fieldset class="fieldset-form">
@@ -633,10 +686,7 @@
                                     </div>
                                     <div id="error_tipo_Menopausia"></div>
                                 </div>
-
-
                             </div><!--End Row-->
-
                         </fieldset>
                     </form><!--End Form-->
 
