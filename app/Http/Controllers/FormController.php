@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Http\Requests\HistorialRequest;
 use App\Models\Paciente;
+use PDF;
 
 class FormController extends Controller
 {   public function __construct(){
@@ -18,8 +19,12 @@ class FormController extends Controller
         return view('HC.paciente');
     }
 
+    public function consultar(){
+        return view('Form.DataTable');
+    }
+
     public function store(HistorialRequest $request){
-       $NewHistorial = new Paciente();
+        $NewHistorial = new Paciente();
         $NewHistorial->Nombre = $request->Nombre;
         $NewHistorial->Fecha_Nacimiento = $request->Fecha;
         $NewHistorial->Sexo = $request->Tipo_Sexo;
@@ -85,4 +90,15 @@ class FormController extends Controller
         return response()->json(['status'=>1]);
 
     }//store()
+
+    public function patients(){
+        return datatables()->eloquent(Paciente::query())->toJson();
+    }
+
+    public function informe($id){
+        $patients = Paciente::find($id);
+        $vista = view('PDF.index')->with('patients',$patients);
+        $pdf = PDF::loadHTML($vista);
+        return $pdf->stream('Informe Medico');
+    }
 }
