@@ -67,8 +67,6 @@ class FormController extends Controller
         $NewHistorial->Medicamentos_DiabetesM = $request->EspecifiqueDiabetes;
         $NewHistorial->Impertencion = $request->Impertencion;
         $NewHistorial->Medicamentos_Impertencion = $request->EspecifiqueIpertencion;
-        $NewHistorial->Cancer = $request->Pcancer;
-        $NewHistorial->Especifique_Cancer = $request->EspecifiquePcancer;
         $NewHistorial->Otro_Cancer = $request->Otro;
         $NewHistorial->Especifique_Cancer_otro = $request->OtroEspecifique;
         $NewHistorial->RT = $request->RT;

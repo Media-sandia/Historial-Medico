@@ -100,7 +100,6 @@
 
                             </div>
                         </fieldset> <!--End fieldset-->
-                        <br>
                         <fieldset class="fieldset-form">
                             <legend>Antecedentes Heredofamiliares</legend>
                             <div class="form-row">
@@ -146,7 +145,6 @@
                                 </div>
                                 </div><!--End row-->
                             </fieldset>
-                            <br>
                             <fieldset class="fieldset-form">
                                 <legend>Antecedentes Personales No Patológicos</legend>
                             <div class="form-row">
@@ -401,9 +399,7 @@
                                     <div id="error_tipo_Deporte"></div>
                                 </div>
                          </div><!--End row-->
-                            <br>
                         </fieldset><!--End fieldset-->
-                        <br>
                         <fieldset class="fieldset-form">
                             <legend>Antecedentes Patológicos</legend>
 
@@ -453,26 +449,6 @@
                             <div class="form-row">
 
                                 <div class="col-md-2 col-sm-2">
-                                    <span class="label-form">¿Padece De Cancer?<span class="text-danger">*</span></span>
-                                    <div class="input-group">
-                                        <select name="Pcancer" id="Pcancer" class="form-control select2">
-                                        <option selected="selected" value="">- Selecciona -</option>
-                                        <option value="Si">Si</option>
-                                        <option value="No">No</option>
-                                        </select>
-                                    </div>
-                                    <div id="error_tipo_Pcancer"></div>
-                                </div>
-
-                                <div class="col-md-3 col-sm-3">
-                                        <span class="label-form">¿Desde Cuando y que Medicamentos Toma?<span class="text-danger">*</span></span>
-                                        <div class="input-group">
-                                            <input type="text" class="form-control" autocomplete="off" onkeyup="UperA(this)" id="EspecifiquePcancer" name="EspecifiquePcancer">
-                                        </div>
-                                        <div id="error_EspecifiquePcancer"></div>
-                                </div>
-
-                                <div class="col-md-2 col-sm-2">
                                     <span class="label-form">¿Ha Tenido Otro Tipo De Cancer?<span class="text-danger">*</span></span>
                                     <div class="input-group">
                                         <select name="Otro" id="Otro" class="form-control select2">
@@ -492,14 +468,7 @@
                                         <div id="error_OtroEspecifique"></div>
                                 </div>
 
-
-                            </div><!--End row-->
-
-                            <br>
-
-                            <div class="form-row">
-
-                                  <div class="col-md-2 col-sm-2">
+                                <div class="col-md-2 col-sm-2">
                                     <span class="label-form">¿Recibio Radioterapia?<span class="text-danger">*</span></span>
                                     <div class="input-group">
                                         <select name="RT" id="RT" class="form-control select2">
@@ -512,12 +481,19 @@
                                 </div>
 
                                 <div class="col-md-2 col-sm-2">
-                                        <span class="label-form">¿En Que Año?<span class="text-danger">*</span></span>
+                                        <span class="label-form">¿En Que Tiempo?<span class="text-danger">*</span></span>
                                         <div class="input-group">
-                                            <input type="text" class="form-control" placeholder="Tiempo Aproximado" autocomplete="off" id="EspecifiqueRT" name="EspecifiqueRT">
+                                            <input type="text" class="form-control" autocomplete="off" id="EspecifiqueRT" name="EspecifiqueRT">
                                         </div>
                                         <div id="error_EspecifiqueRT"></div>
                                 </div>
+
+
+                            </div><!--End row-->
+
+                            <br>
+
+                            <div class="form-row">
 
                                 <div class="col-md-2 col-sm-2">
                                         <span class="label-form">¿En Que Parte?<span class="text-danger">*</span></span>
@@ -549,16 +525,14 @@
                                 </div>
 
                                 <div class="col-md-2 col-sm-2">
-                                        <span class="label-form">¿En Que Año?<span class="text-danger">*</span></span>
+                                        <span class="label-form">¿En Que Tiempo?<span class="text-danger">*</span></span>
                                         <div class="input-group">
                                             <input type="text" class="form-control" autocomplete="off" id="EspecifiqueQM" name="EspecifiqueQM" placeholder="">
                                         </div>
                                         <div id="error_EspecifiqueQM"></div>
                                 </div>
-                            </div><!--End row-->
-                                <br>
-                            <div class="form-row">
-                                 <div class="col-md-2 col-sm-2">
+
+                                <div class="col-md-2 col-sm-2">
                                     <span class="label-form">¿Recibio inmunoterapia?<span class="text-danger">*</span></span>
                                     <div class="input-group">
                                         <select name="inmunoterapia" id="inmunoterapia" class="form-control select2">
@@ -569,16 +543,19 @@
                                     </div>
                                     <div id="error_tipo_inmunoterapia"></div>
                                 </div>
+                            </div><!--End row-->
+                                <br>
+                            <div class="form-row">
 
                                 <div class="col-md-2 col-sm-2">
                                         <span class="label-form">¿Fecha Aproximada?<span class="text-danger">*</span></span>
                                         <div class="input-group">
-                                            <input type="text" class="form-control" placeholder="Tiempo Aproximado" autocomplete="off" id="FechaInmune" name="FechaInmune">
+                                            <input type="text" class="form-control" autocomplete="off" id="FechaInmune" name="FechaInmune">
                                         </div>
                                         <div id="error_FechaInmune"></div>
                                 </div>
 
-                                <div class="col-md-3 col-sm-3">
+                                <div class="col-md-2 col-sm-2">
                                     <span class="label-form">¿Ha Tenido Infecciones por VHP?<span class="text-danger">*</span></span>
                                     <div class="input-group">
                                         <select name="VHP" id="VHP" class="form-control select2">
@@ -590,7 +567,7 @@
                                     <div id="error_tipo_VHP"></div>
                                 </div>
 
-                                <div class="col-md-3 col-sm-3">
+                                <div class="col-md-2 col-sm-2">
                                     <span class="label-form">¿Ha Tenido Infecciones Hepatitis B?<span class="text-danger">*</span></span>
                                     <div class="input-group">
                                         <select id="HepatitisB" name="HepatitisB" class="form-control select2">
@@ -601,11 +578,8 @@
                                     </div>
                                     <div id="error_tipo_HepatitisB"></div>
                                 </div>
-                            </div><!--End row-->
-                                <br>
 
-                            <div class="form-row">
-                                 <div class="col-md-3 col-sm-3">
+                                <div class="col-md-2 col-sm-3">
                                     <span class="label-form">¿Ha Tenido Infecciones Hepatitis C?<span class="text-danger">*</span></span>
                                     <div class="input-group">
                                         <select name="HepatitisC" id="HepatitisC" class="form-control select2">
@@ -615,11 +589,10 @@
                                         </select>
                                     </div>
                                     <div id="error_tipo_HepatitisC"></div>
-                            </div>
-
-                            </div>
+                                </div>
+                            </div><!--End row-->
                             </fieldset>
-                            <br>
+
                         <fieldset class="fieldset-form">
                             <legend>Datos Gineco Obstetrico</legend>
                                 <div class="form-row">

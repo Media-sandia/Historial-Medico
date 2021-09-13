@@ -5,6 +5,7 @@ namespace App\Http\Requests;
 use Illuminate\Foundation\Http\FormRequest;
 
 class FormRequest extends FormRequest
+
 {
     /**
      * Determine if the user is authorized to make this request.
@@ -65,8 +66,7 @@ class FormRequest extends FormRequest
             'EspecifiqueDiabetes'=>'required',
             'Impertencion'=>'required',
             'EspecifiqueIpertencion'=>'required',
-            'Pcancer'=>'required',
-            'EspecifiquePcancer'=>'required',
+            'Otro_Cancer'=>'required'
             'RT'=>'required',
             'EspecifiqueRT'=>'required',
             'PartRT'=>'required',
@@ -128,8 +128,7 @@ class FormRequest extends FormRequest
             'EspecifiqueDiabetes.required'=>'Este Campo Es Requerido',
             'Impertencion.required'=>'Este Campo Es Requerido',
             'EspecifiqueIpertencion.required'=>'Este Campo Es Requerido',
-            'Pcancer.required'=>'Este Campo Es Requerido',
-            'EspecifiquePcancer.required'=>'Este Campo Es Requerido',
+             'Otro_Cancer.required'=>'Este Campo Es Requerido',
             'RT.required'=>'Este Campo Es Requerido',
             'EspecifiqueRT.required'=>'Este Campo Es Requerido',
             'PartRT.required'=>'Este Campo Es Requerido',

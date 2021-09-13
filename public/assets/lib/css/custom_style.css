@@ -53,15 +53,11 @@
 }
 /**/
 
-
-
-
-/* Bg gris en td principal de tabla */
-.thead-index{
-    border-top: 2px solid #FFBB33;
-    background-color: #F8F8F8;
+.thead-index-pacientes{ /* estilos de la tabla de pacientes*/
+     border-top: 2px solid #E3BA00;
+     color:#FFFFFF;
+     background: linear-gradient(to right,#2962FF 55%, #36bea6);
 }
-
 
 
 /* Tamaños en letras */

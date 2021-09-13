@@ -56,8 +56,6 @@ class CreatePacientesTable extends Migration
             $table->string('Medicamentos_DiabetesM');
             $table->string('Impertencion');
             $table->string('Medicamentos_Impertencion');
-            $table->string('Cancer');
-            $table->string('Especifique_Cancer');
             $table->string('Otro_Cancer');
             $table->string('Especifique_Cancer_otro')->nullable($value = true);
             $table->string('RT');

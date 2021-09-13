@@ -77,13 +77,13 @@
 					<strong>Fecha</strong>
 			</td>
 			<td width="20%" class="bg-element-tabla-datos">
-				14/08/2021
+
 			</td>
 			<td width="20%">
 					<strong>Hora de atencion</strong>
 			</td>
 			<td width="20%" class="bg-element-tabla-datos">
-				14:05:00
+
 			</td>
 		</tr>
 	</tbody>

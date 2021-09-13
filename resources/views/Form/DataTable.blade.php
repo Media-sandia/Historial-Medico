@@ -15,8 +15,8 @@
 	<div class="container-fluid">
 		<div class="card">
 			<div class="card-body">
-				<table class="table table-striped" id="DataPaciente" name="DataPaciente">
-					<thead>
+				<table class="table table-sm m-b-0 " id="DataPaciente" name="DataPaciente">
+					<thead class="thead-index-pacientes">
 						<tr>
 							<th>ID</th>
 							<th>Nombre Del Paciente</th>
@@ -28,6 +28,11 @@
 						</tr>
 				   </thead>
 				</table><!--End Table-->
+				<center>
+                    <div id="loading">
+                        <i class="fa fa-spinner fa-pulse fa-3x fa-fw"></i>
+                    </div>
+                </center>
 			</div><!--End card-body-->
 		</div><!--End card-->
 	</div><!--End container -->

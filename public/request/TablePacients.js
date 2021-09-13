@@ -18,6 +18,7 @@ function load_data(){
 }
 
 function show_patients(response){
+   $('#loading').hide();
     var table_patients = $('#DataPaciente').DataTable({
         "processing":true,
         "scroller":true,
