@@ -418,7 +418,7 @@
 		</tr>
 	</tbody>
 </table>
-<br><br><br>
+<br><br><br><br>
 
 <table class="tabla-datos_paciente" width="100%">
 	<tbody>
