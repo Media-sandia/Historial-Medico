@@ -124,6 +124,7 @@ class HistorialRequest extends FormRequest
     'EspecifiqueDiabetes.required'=>'Este Campo Es Requerido',
     'Impertencion.required'=>'Este Campo Es Requerido',
     'EspecifiqueIpertencion.required'=>'Este Campo Es Requerido',
+     'Otro.required'=>'Este Campo Es Requerido',
     'RT.required'=>'Este Campo Es Requerido',
     //'EspecifiqueRT.required'=>'Este Campo Es Requerido',
     'PartRT.required'=>'Este Campo Es Requerido',

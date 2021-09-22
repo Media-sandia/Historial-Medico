@@ -70,20 +70,20 @@
 			<td width="15%">
 					<strong>Telefono</strong>
 			</td>
-			<td width="10%" class="bg-element-tabla-datos">
+			<td width="20%" class="bg-element-tabla-datos">
 				{{$patients->Telefono}}
 			</td>
 			<td width="15%">
 					<strong>Fecha</strong>
 			</td>
 			<td width="20%" class="bg-element-tabla-datos">
-
+				{{$patients->created_at->toDateString()}}
 			</td>
 			<td width="20%">
 					<strong>Hora de atencion</strong>
 			</td>
 			<td width="20%" class="bg-element-tabla-datos">
-
+				{{$patients->created_at->format("H:i:s A")}}
 			</td>
 		</tr>
 	</tbody>
@@ -199,10 +199,15 @@
 				{{$patients->Transfucion}}
 			</td>
 			<td width="15%">
-				<strong>Fecha De La Ultima Transfusion:</strong>
+				<strong>Fecha Ultima Transfusion:</strong>
 			</td>
 			<td width="50%" class="bg-element-tabla-datos">
-				{{$patients->Fecha_Transfucion}}
+				@if($patients->Fecha_Transfucion != null)
+					{{$patients->Fecha_Transfucion}}
+				@endif
+				@if($patients->Fecha_Transfucion === null)
+					Sin Transfuciones
+				@endif
 			</td>
 		</tr>
 		<tr>
@@ -305,20 +310,6 @@
 		</tr>
 		<tr>
 			<td width="20%">
-				<strong>Cáncer:</strong>
-			</td>
-			<td width="15%" class="bg-element-tabla-datos">
-				{{$patients->Cancer}}
-			</td>
-			<td width="15%">
-				<strong>Especifique:</strong>
-			</td>
-			<td width="50%" class="bg-element-tabla-datos">
-				{{$patients->Especifique_Cancer}}
-			</td>
-		</tr>
-		<tr>
-			<td width="20%">
 				<strong>Otro tipo de cáncer:</strong>
 			</td>
 			<td width="15%" class="bg-element-tabla-datos">
@@ -347,7 +338,12 @@
 				<strong>En que año:</strong>
 			</td>
 			<td width="10%" class="bg-element-tabla-datos">
-				{{$patients->Fecha_RT}}
+				@if($patients->Fecha_RT != null)
+					{{$patients->Fecha_RT}}
+				@endif
+				@if($patients->Fecha_RT === null)
+					No Aplica
+				@endif
 			</td>
 			<td width="15%">
 				<strong>En que parte:</strong>
@@ -368,7 +364,12 @@
 				<strong>En que año:</strong>
 			</td>
 			<td width="10%" class="bg-element-tabla-datos">
-				{{$patients->Fecha_QM}}
+				@if($patients->Fecha_QM != null)
+					{{$patients->Fecha_QM}}
+				@endif
+				@if($patients->Fecha_QM === null)
+					No Aplica
+				@endif
 			</td>
 			<td width="15%">
 				<strong> Recibió inmunoterapia:</strong>
@@ -385,10 +386,15 @@
 			<td width="20%">
 				<strong>Fecha aproximada:</strong>
 			</td>
-			<td width="20%" class="bg-element-tabla-datos">
-				{{$patients->Fecha_Inmunoterapia}}
+			<td width="10%" class="bg-element-tabla-datos">
+				@if($patients->FechaInmune != null)
+					{{$patients->FechaInmune}}
+				@endif
+				@if($patients->FechaInmune === null)
+					No Aplica
+				@endif
 			</td>
-			<td width="20%">
+			<td width="20%" class="bg-element-tabla-datos">
 				<strong>Infeciones por VHP:</strong>
 			</td>
 			<td width="20%" class="bg-element-tabla-datos">
@@ -412,7 +418,7 @@
 		</tr>
 	</tbody>
 </table>
-<br><br>
+<br><br><br>
 
 <table class="tabla-datos_paciente" width="100%">
 	<tbody>
@@ -459,13 +465,23 @@
 				<strong>Fecha Ultimo Papanicolaou </strong>
 			</td>
 			<td width="25%" class="bg-element-tabla-datos">
-				{{$patients->Fecha_Papanicolado}}
+				@if($patients->Fecha_Papanicolado != null)
+					$patients->Fecha_Papanicolado}}
+				@endif
+				@if($patients->Fecha_Papanicolado === null)
+					No Aplica
+				@endif
 			</td>
 			<td width="25%">
 				<strong>Fecha Ultima mastografia</strong>
 			</td>
 			<td width="25%" class="bg-element-tabla-datos">
-				{{$patients->Fecha_Mastografia}}
+				@if($patients->Fecha_Mastografia != null)
+					{{$patients->Fecha_Mastografia}}
+				@endif
+				@if($patients->Fecha_Mastografia === null)
+					No Aplica
+				@endif
 			</td>
 		</tr>
 	</tbody>
@@ -478,7 +494,12 @@
 				<strong>Edad en la que entro a la menopausia</strong>
 			</td>
 			<td width="50%" class="bg-element-tabla-datos">
-				{{$patients->Fecha_Menopausia}}
+				@if($patients->Fecha_Menopausia != null)
+					{{$patients->Fecha_Menopausia}}
+				@endif
+				@if($patients->Fecha_Menopausia === null)
+					No Aplica
+				@endif
 			</td>
 		</tr>
 	</tbody>
